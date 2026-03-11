@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Announcement Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Announcement Board</h1>
+
+<div id="login">
+  <input type="password" id="codeInput" placeholder="Enter secret code">
+  <button onclick="checkCode()">Enter</button>
+</div>
+
+<div id="announcementSection" style="display:none;">
+  <h2>Post Announcement</h2>
+  <textarea id="announcementText"></textarea>
+  <button onclick="postAnnouncement()">Post</button>
+
+  <h2>Current Announcement</h2>
+  <p id="announcementDisplay"></p>
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
